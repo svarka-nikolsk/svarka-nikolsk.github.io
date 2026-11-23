@@ -68,11 +68,11 @@ footer{background:#090909;color:#888;padding:27px 0;font-size:13px}
 <div class="contact-item">📞 <a href="tel:+79005401694"><b>+7 (900) 540-16-94</b></a></div>
 <div class="contact-item">⏱️ По предварительной договорённости</div></div>
 
-<form onsubmit="sendForm(event)">
+<form action="https://formspree.io/f/mkvavpgz" method="POST">
 <h3 style="margin-top:0;font-size:23px">Заявка</h3>
-<input id="name" required placeholder="Ваше имя">
-<input id="phone" required type="tel" placeholder="Ваш телефон">
-<textarea id="message" placeholder="Что нужно изготовить или отремонтировать?"></textarea>
+<input id="name" name="name" required type="text" placeholder="Ваше имя">
+<input id="phone" name="phone" required type="text" placeholder="Ваш телефон">
+<textarea id="message" name="message" placeholder="Что нужно изготовить или отремонтировать?"></textarea>
 <button class="btn primary" type="submit">Позвонить для заказа</button>
 <p id="result" class="note"></p>
 </form>
